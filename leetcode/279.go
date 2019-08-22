@@ -8,7 +8,7 @@ package leetcode
 执行用时 :1284 ms, 在所有 Go 提交中击败了6.92%的用户
 内存消耗 :5.9 MB, 在所有 Go 提交中击败了47.50%的用户
  */
-func numSquares1(n int) int {
+func numSquares(n int) int {
 	nums := make([]int, 0)
 	dp := make([]int, n + 1)
 	for i := 1; i * i <= n; i ++ {
