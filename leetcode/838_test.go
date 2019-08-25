@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestPushDominoes(t * testing.T) {
+func TestPushDominoes(t *testing.T) {
 
 	inputs := []string {
 		"RR.L",
