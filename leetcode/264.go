@@ -1,12 +1,12 @@
 package leetcode
 
-const max  = 1690
+const MAX = 1690
 
 /*
 时间击败了10%
  */
 func nthUglyNumber1(n int) int {
-	uglyNums := make([]int, max)
+	uglyNums := make([]int, MAX)
 	uglyNums[0] = 1
 	uglyNums[1] = 2
 	uglyNums[2] = 3
