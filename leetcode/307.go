@@ -19,7 +19,7 @@ func (this *binaryIndexTree) sum(j int) int {
 	sum := 0
 	for idx := j; idx > 0; {
 		sum += this.tree[idx]
-		idx -= idx & (- idx)
+		idx -= this.lowbit(idx)
 	}
 	return sum
 }
@@ -27,8 +27,12 @@ func (this *binaryIndexTree) sum(j int) int {
 func (this *binaryIndexTree) upadte(idx int, val int) {
 	for ; idx <= this.maxIdx; {
 		this.tree[idx] += val
-		idx += idx & (-idx)
+		idx += this.lowbit(idx)
 	}
+}
+
+func (this * binaryIndexTree) lowbit(x int) int {
+	return x - x & (x - 1)
 }
 
 func Constructor(nums []int) NumArray {
