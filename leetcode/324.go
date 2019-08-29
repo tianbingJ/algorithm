@@ -1,6 +1,8 @@
 package leetcode
 
-import "sort"
+import (
+	"sort"
+)
 
 func wiggleSort(nums []int) {
 	result := make([]int, len(nums))
@@ -29,3 +31,4 @@ func wiggleSort(nums []int) {
 	}
 	copy(nums, result)
 }
+
