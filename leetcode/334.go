@@ -83,7 +83,7 @@ func increasingTriplet(nums []int) bool {
 
 /*
 时间复杂度满足，但是实现比较复杂。
-思想类似，但是有更简单的实现，这种想法太精巧了:
+思想类似，但是有更简单的实现，这种想法太精巧了,但是没法得到正确的3个数字
 
         for (int n : nums) {
             if (n <= one) {
